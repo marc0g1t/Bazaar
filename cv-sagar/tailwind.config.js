@@ -10,6 +10,10 @@ module.exports = {
       gap: {
         97: "388px",
       },
+      height: {
+        192.5: "770px",
+        173.5: "694px",
+      },
     },
   },
   plugins: [],

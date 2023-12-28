@@ -43,8 +43,11 @@ export default function Home() {
           />{" "}
         </div>
       </div>
-      <div>
-        <button className="bg-slate-300 rounded-xl px-3 ">About me</button>
+      <div className="border-solid border-2 w-320 h-192.5 mt-20">
+        <div className="border-solid border-2 w-320 flex justify-center">
+          <button className="bg-slate-300 rounded-xl px-3">About me</button>
+        </div>
+        <div className="border-solid border-2 w-304 h-173.5 flex items-end"></div>
       </div>
     </div>
   );
