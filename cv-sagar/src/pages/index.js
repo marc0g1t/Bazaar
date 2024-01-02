@@ -3,23 +3,81 @@ import { FaGithub } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import Image from "next/image";
-import ThirdPage from "@/components/logos";
-PostgreSQL  MongoDB  Sass/Scss  Tailwindcss  Figma  Cypress  Storybook  Git  Socket.io
-Nest.js   Express.js  Node.js   Next.js   React   Typescript   Javascript
+import { Apps } from "@/components/Apps";
+import experience from "@/assets/experience.json";
+import { Upwork } from "@/components/Upwork";
+import { Fiskil } from "@/components/Fiskil";
+import { OppositeFiskil } from "@/components/OppositeFiskil";
 export default function Home() {
-  const stacks = [
+  const array = [
     {
-      image: "/cyp.svg",
+      image: "icon-javscript.svg",
+      name: "Javascript",
+    },
+    {
+      image: "icon-typescript.svg",
+      name: "Typescript",
+    },
+    {
+      image: "icon-react.svg",
+      name: "React",
+    },
+    {
+      image: "icon-nextjs.svg",
+      name: "Next.js",
+    },
+    {
+      image: "icon-nodejs.svg",
+      name: "Node.js",
+    },
+    {
+      image: "icon-express.svg",
+      name: "Express.js",
+    },
+    {
+      image: "icon-nest.svg",
+      name: "Nest.js",
+    },
+    {
+      image: "icon-socket.svg",
+      name: "React",
+    },
+    {
+      image: "icon-postgresql.svg",
+      name: "PostgreSQL",
+    },
+    {
+      image: "icon-mongodb.svg",
+      name: "MongoDB",
+    },
+    {
+      image: "icon-sass.svg",
+      name: "Sass/Scss",
+    },
+    {
+      image: "icon-tailwindcss.svg",
+      name: "Tailwindcss",
+    },
+    {
+      image: "icon-figma.svg",
+      name: "Figma",
+    },
+    {
+      image: "icon-cypress.svg",
       name: "Cypress",
     },
     {
-      image: "/elep.svg",
-      name: "Cypress",
+      image: "icon-storybook.svg",
+      name: "Storybook",
+    },
+    {
+      image: "icon-git.svg",
+      name: "Git",
     },
   ];
 
   return (
-    <div>
+    <div className="">
       <div className="flex justify-between">
         <div className="max-w-[768px]">
           <h1 className="font-bold text-xl mt-20">Hi, I’m Sagar 👋</h1>
@@ -148,8 +206,8 @@ export default function Home() {
         </div>
       </div>
       <div className="border-solid border w-[1440px] h-[560px] flex justify-center items-center">
-        <div className="border-solid border w-[1280px] h-[368px] flex flex-col justify-between">
-          <div className="border-solid border w-[1216px] h-[72px] flex flex-col justify-between">
+        <div className="border-solid border w-[1280px] h-[368px] flex flex-col justify-between items-center">
+          <div className="border-solid border w-[1216px] h-[72px] flex flex-col justify-between ">
             <div className="border-solid border w-[1216px] h-[28px] flex justify-center">
               <button className="bg-slate-300 rounded-xl px-3">skills</button>
             </div>
@@ -157,16 +215,53 @@ export default function Home() {
               The skills, tools and technologies I am really good at:
             </div>
           </div>
-          <div className="border-solid border w-[1280px] h-[248px] flex flex-col justify-between items-center">
-            <div className="border-solid border w-[1216px] h-[100px]">
-              {stacks.map(({ image,   }) => (
-                <div>
-
-                </div>
+          <div className="border-solid border w-[1280px] h-[248px] flex flex-col justify-center items-center">
+            <div className="border-solid border w-[1216px] h-[100px] flex gap-16 flex-wrap">
+              {array.map((element) => (
+                <Apps image={element.image} name={element.name} />
               ))}
             </div>
             <div className="border-solid border w-[1216px] h-[100px]"></div>
           </div>
+        </div>
+      </div>
+      <div className="w-[1440px] h-[1140px] bg-[#F9FAFB] flex items-center justify-center">
+        <div className="w-[1280px] h-[948px] px-[32px] flex flex-col items-center gap-[48px]">
+          <div className="w-full flex flex-col items-center gap-[16px]">
+            <button className="w-[115px] h-[28px] bg-[#E5E7EB] rounded-[12px] px-[20px] py-[4px] flex items-center justify-center">
+              experience
+            </button>
+            <h3>Here is a quick summary of my most recent experiences:</h3>
+          </div>
+          <div className="flex flex-col gap-[48px]">
+            {experience.map((e) => (
+              <Upwork
+                title={e.title}
+                date={e.date}
+                text1={e.text1}
+                text2={e.text2}
+                text3={e.text3}
+                text4={e.text4}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="w-[1440px] h-[1848px] px-[96px] py-[80px]">
+        <div className="w-[1228px] h-[1656px] flex flex-col gap-[48px]">
+          <div>
+            <div className="w-[1216px] h-[28px] flex justify-center">
+              <button className="w-[75px] h-[28px]  rounded-[12px] px-[20px] py-[4px] bg-[#E5E7EB]">
+                Work
+              </button>
+            </div>
+            <h1 className="w-[1216px] h-[28px] flex justify-center">
+              Some of the noteworthy projects I have built:
+            </h1>
+          </div>
+          <Fiskil />
+          <OppositeFiskil />
+          <Fiskil />
         </div>
       </div>
     </div>
