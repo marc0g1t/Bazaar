@@ -1,3 +1,13 @@
+// import {useTheme} from next-themes
+// function Home() {
+//   const {theme, setTheme} = useTheme();
+//   console.log(theme);
+//   return (
+//     <div className="w-20 h-20 bg-green-300 dark:bg-yellow-400">
+//       <button onClick={() => setTheme(theme=== "dark" ? "light": "dark")}>Mode</button>
+//     </div>
+//   )
+// }
 import { CiLocationOn } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
