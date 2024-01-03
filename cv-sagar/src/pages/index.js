@@ -20,6 +20,7 @@ import experience from "@/assets/experience.json";
 import { Upwork } from "@/components/Upwork";
 import { Fiskil } from "@/components/Fiskil";
 import { OppositeFiskil } from "@/components/OppositeFiskil";
+
 export default function Home() {
   const array = [
     {
@@ -128,7 +129,9 @@ export default function Home() {
       </div>
       <div className="border-solid border w-320 h-192.5 mt-20">
         <div className="border-solid border w-320 flex justify-center">
-          <button className="bg-slate-300 rounded-xl px-3">About me</button>
+          <button className="bg-slate-300 rounded-xl px-3 dark:bg-white dark:text-black">
+            About me
+          </button>
         </div>
         <div className="border-solid border w-304 h-173.5 mt-12 flex justify-between ">
           <div className="border-solid border w-[584px] h-[694px]">
@@ -221,7 +224,9 @@ export default function Home() {
         <div className="border-solid border w-[1280px] h-[368px] flex flex-col justify-between items-center">
           <div className="border-solid border w-[1216px] h-[72px] flex flex-col justify-between ">
             <div className="border-solid border w-[1216px] h-[28px] flex justify-center">
-              <button className="bg-slate-300 rounded-xl px-3">skills</button>
+              <button className="bg-slate-300 rounded-xl px-3 dark:bg-white dark:text-black">
+                skills
+              </button>
             </div>
             <div className="border-solid border w-[1216px] h-[28px] flex justify-center">
               The skills, tools and technologies I am really good at:
@@ -237,10 +242,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[1440px] h-[1140px] bg-[#F9FAFB] flex items-center justify-center">
-        <div className="w-[1280px] h-[948px] px-[32px] flex flex-col items-center gap-[48px]">
+      <div className="w-[1440px] h-[1140px] bg-[#F9FAFB] flex items-center justify-center dark: ">
+        <div className="w-[1280px] h-[948px] px-[32px] flex flex-col items-center gap-[48px] ">
           <div className="w-full flex flex-col items-center gap-[16px]">
-            <button className="w-[115px] h-[28px] bg-[#E5E7EB] rounded-[12px] px-[20px] py-[4px] flex items-center justify-center">
+            <button className="w-[115px] h-[28px] bg-[#E5E7EB] rounded-[12px] px-[20px] py-[4px] flex items-center justify-center dark:bg-white dark:text-black">
               experience
             </button>
             <h3>Here is a quick summary of my most recent experiences:</h3>
@@ -263,11 +268,11 @@ export default function Home() {
         <div className="w-[1228px] h-[1656px] flex flex-col gap-[48px]">
           <div>
             <div className="w-[1216px] h-[28px] flex justify-center">
-              <button className="w-[75px] h-[28px]  rounded-[12px] px-[20px] py-[4px] bg-[#E5E7EB]">
+              <button className="w-[75px] h-[28px]  rounded-[12px] px-[20px] py-[4px] bg-[#E5E7EB] flex items-center justify-center dark:bg-white dark:text-black">
                 Work
               </button>
             </div>
-            <h1 className="w-[1216px] h-[28px] flex justify-center">
+            <h1 className="w-[1216px] h-[28px] flex justify-center mt-5 text-[20px]">
               Some of the noteworthy projects I have built:
             </h1>
           </div>

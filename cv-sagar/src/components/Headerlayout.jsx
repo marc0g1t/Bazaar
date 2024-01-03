@@ -1,5 +1,6 @@
 import { MdWbSunny } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
+import { useTheme } from "next-themes";
 
 import Image from "next/image";
 
@@ -14,6 +15,8 @@ export default function Page() {
   );
 }
 export const Header = ({ children }) => {
+  const { theme, setTheme } = useTheme();
+
   const routes = ["About", "Work", "Testioials", "Contact"];
   return (
     <div className="mx-auto mt-7 max-w-screen-xl">
@@ -27,7 +30,9 @@ export const Header = ({ children }) => {
             ))}
           </div>
           <div className=" flex gap-4 items-center">
-            <MdWbSunny />
+            <div onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+              <MdWbSunny />
+            </div>
             <button className="rounded-xl bg-black text-white px-4 py-1.5">
               Download CV
             </button>
