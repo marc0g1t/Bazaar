@@ -17,7 +17,7 @@ export function Fiskil() {
       <div className="h-full w-[576px] bg-[#F9FAFB] px-[48px] py-[48px]">
         <Image src="/picture.png" height={384} width={480} />
       </div>
-      <div className="h-full h-[576px] flex flex-col gap-[24px]">
+      <div className="h-full w-[576px] flex flex-col gap-[24px]">
         <div>Fiskil</div>
         <div className="w-[480px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec
@@ -25,9 +25,9 @@ export function Fiskil() {
           faucibus orci luctus et ultrices posuere cubilia curae.
         </div>
         <div className="w-[480px] flex gap-4 flex-wrap">
-          {array.map((e) => (
+          {array.map((esport) => (
             <button className="rounded-[12px] px-[20px] py-[4px] bg-[#E5E7EB]">
-              {e}
+              {esport}
             </button>
           ))}
         </div>

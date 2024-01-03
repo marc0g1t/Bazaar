@@ -8,6 +8,8 @@
 //     </div>
 //   )
 // }
+
+import { Tail } from "@/components/Tail";
 import { CiLocationOn } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
@@ -273,6 +275,7 @@ export default function Home() {
           <OppositeFiskil />
           <Fiskil />
         </div>
+        <Tail />
       </div>
     </div>
   );
