@@ -1,14 +1,3 @@
-// import {useTheme} from next-themes
-// function Home() {
-//   const {theme, setTheme} = useTheme();
-//   console.log(theme);
-//   return (
-//     <div className="w-20 h-20 bg-green-300 dark:bg-yellow-400">
-//       <button onClick={() => setTheme(theme=== "dark" ? "light": "dark")}>Mode</button>
-//     </div>
-//   )
-// }
-
 import { Tail } from "@/components/Tail";
 import { CiLocationOn } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa6";
@@ -127,17 +116,17 @@ export default function Home() {
           />{" "}
         </div>
       </div>
-      <div className="border-solid border w-320 h-192.5 mt-20">
-        <div className="border-solid border w-320 flex justify-center">
-          <button className="bg-slate-300 rounded-xl px-3 dark:bg-white dark:text-black">
+      <div className="border-solid  w-320 h-192.5 mt-20">
+        <div className="border-solid  w-320 flex justify-center">
+          <button className="bg-slate-300 rounded-xl px-3 dark:bg-[#374051] dark:text-#d1d5dc">
             About me
           </button>
         </div>
-        <div className="border-solid border w-304 h-173.5 mt-12 flex justify-between ">
-          <div className="border-solid border w-[584px] h-[694px]">
+        <div className="border-solid w-304 h-173.5 mt-12 flex justify-between ">
+          <div className="border-solid  w-[584px] h-[694px]">
             <div className="border-solid border w-[440px] h-[520px]">
               <div className="relative">
-                <div className="border-solid border w-[400px] h-[480px] bg-gray-100 absolute top-10"></div>
+                <div className="border-solid border w-[400px] h-[480px] bg-[#e5e7ea] absolute top-10 dark:bg-[#374051]"></div>
                 <div className="absolute right-0">
                   {" "}
                   <Image
@@ -153,11 +142,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-solid border w-[584px] h-[694px] flex flex-col justify-between ">
+          <div className="border-solid w-[584px] h-[694px] flex flex-col justify-between ">
             <h1 className="font-medium text-2xl">
               Curious about me? Here you have it:
             </h1>
-            <div className="border-solid border w-[584px] h-[634px] flex flex-col gap-y-4">
+            <div className="border-solid w-[584px] h-[634px] flex flex-col gap-y-4">
               <div>
                 I'm a passionate, self-proclaimed designer who specializes in
                 full stack development (React.js & Node.js). I am very
@@ -190,8 +179,8 @@ export default function Home() {
                 Finally, some quick bits about me.Finally, some quick bits about
                 me.
               </div>
-              <div className="border-solid border w-[584px] h-[58px] flex justify-between">
-                <div className="border-solid border w-[287px] h-[58px]">
+              <div className="border-solid  w-[584px] h-[58px] flex justify-between">
+                <div className="border-solid  w-[287px] h-[58px]">
                   <div className="flex items-center gap-x-2 ml-2">
                     <div className="h-1 w-1 bg-black rounded "></div>
                     <div>B.E. in Computer Engineering</div>
@@ -201,7 +190,7 @@ export default function Home() {
                     <div>Full time freelancer</div>
                   </div>
                 </div>
-                <div className="border-solid border w-[287px] h-[58px]">
+                <div className="border-solid w-[287px] h-[58px]">
                   <div className="flex items-center gap-x-2 ml-2">
                     <div className="h-1 w-1 bg-black rounded"></div>
                     <div>Avid learner</div>
@@ -220,32 +209,32 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="border-solid border w-[1440px] h-[560px] flex justify-center items-center">
-        <div className="border-solid border w-[1280px] h-[368px] flex flex-col justify-between items-center">
-          <div className="border-solid border w-[1216px] h-[72px] flex flex-col justify-between ">
-            <div className="border-solid border w-[1216px] h-[28px] flex justify-center">
-              <button className="bg-slate-300 rounded-xl px-3 dark:bg-white dark:text-black">
+      <div className=" w-[1440px] h-[560px] flex justify-center items-center">
+        <div className="border-solid  w-[1280px] h-[368px] flex flex-col justify-between items-center">
+          <div className="border-solid w-[1216px] h-[72px] flex flex-col justify-between ">
+            <div className="border-solid  w-[1216px] h-[28px] flex justify-center">
+              <button className="bg-slate-300 rounded-xl px-3 dark:bg-[#374051] dark:text-#d1d5dc">
                 skills
               </button>
             </div>
-            <div className="border-solid border w-[1216px] h-[28px] flex justify-center">
+            <div className="border-solid w-[1216px] h-[28px] flex justify-center">
               The skills, tools and technologies I am really good at:
             </div>
           </div>
-          <div className="border-solid border w-[1280px] h-[248px] flex flex-col justify-center items-center">
-            <div className="border-solid border w-[1216px] h-[100px] flex gap-16 flex-wrap">
+          <div className="border-solid  w-[1280px] h-[248px] flex flex-col justify-center items-center">
+            <div className="border-solid  w-[1216px] h-[100px] flex gap-16 flex-wrap">
               {array.map((element) => (
                 <Apps image={element.image} name={element.name} />
               ))}
             </div>
-            <div className="border-solid border w-[1216px] h-[100px]"></div>
+            <div className="border-solid  w-[1216px] h-[100px]"></div>
           </div>
         </div>
       </div>
-      <div className="w-[1440px] h-[1140px] bg-[#F9FAFB] flex items-center justify-center dark: ">
+      <div className="w-[1440px] h-[1140px] bg-[#F9FAFB] flex items-center justify-center dark:bg-[#101827]">
         <div className="w-[1280px] h-[948px] px-[32px] flex flex-col items-center gap-[48px] ">
           <div className="w-full flex flex-col items-center gap-[16px]">
-            <button className="w-[115px] h-[28px] bg-[#E5E7EB] rounded-[12px] px-[20px] py-[4px] flex items-center justify-center dark:bg-white dark:text-black">
+            <button className="w-[115px] h-[28px] bg-[#E5E7EB] rounded-[12px] px-[20px] py-[4px] flex items-center justify-center dark:bg-[#374051] dark:text-#d1d5dc">
               experience
             </button>
             <h3>Here is a quick summary of my most recent experiences:</h3>
@@ -268,7 +257,7 @@ export default function Home() {
         <div className="w-[1228px] h-[1656px] flex flex-col gap-[48px]">
           <div>
             <div className="w-[1216px] h-[28px] flex justify-center">
-              <button className="w-[75px] h-[28px]  rounded-[12px] px-[20px] py-[4px] bg-[#E5E7EB] flex items-center justify-center dark:bg-white dark:text-black">
+              <button className="w-[75px] h-[28px]  rounded-[12px] px-[20px] py-[4px] bg-[#E5E7EB] flex items-center justify-center dark:bg-[#374051] dark: text-[#d1d5dc]">
                 Work
               </button>
             </div>

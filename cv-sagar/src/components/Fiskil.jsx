@@ -18,7 +18,7 @@ export function Fiskil() {
         <Image src="/picture.png" height={384} width={480} />
       </div>
       <div className="h-full w-[576px] flex flex-col gap-[24px]  bg-[#ffffff] rounded-tr-lg rounded-br-lg flex items-center dark:bg-[#1f2937] dark:text-white">
-        <div className="border-solid border w-[480px] h-[28px] mt-10 text-2xl">
+        <div className="border-solid  w-[480px] h-[28px] mt-10 text-2xl">
           Fiskil
         </div>
         <div className="w-[480px]">
@@ -36,7 +36,7 @@ export function Fiskil() {
             </button>
           ))}
         </div>
-        <div className="h-[36px] w-[480px] border border-solid">
+        <div className="h-[36px] w-[480px]  border-solid">
           <Image src="/Icon Button.png" height={36} width={36} />
         </div>
       </div>
